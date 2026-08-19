@@ -68,4 +68,11 @@ def jugar():
         print("Ganaste!")
     else:
         print("Perdiste :( uwu miau miau miau miau miau")
-jugar()
+jugando = True
+while jugando:
+    jugar()
+    otra = input("¿Jugar de nuevo? (s/n): ").lower()
+    if otra != "s":
+        jugando = False
+
+print("Gracias por jugar!")
