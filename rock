@@ -60,5 +60,12 @@ def jugar():
 
     cpu = random.choice(opciones)
     print("CPU eligió:", cpu)
+    resultado = determinar_ganador(jugador, cpu)
 
+    if resultado == "empate":
+        print("Empate!")
+    elif resultado == "jugador":
+        print("Ganaste!")
+    else:
+        print("Perdiste :( uwu miau miau miau miau miau")
 jugar()
