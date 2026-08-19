@@ -49,6 +49,7 @@ def determinar_ganador(jugador, cpu):
         return "cpu"
 
 def jugar():
+    print("=== Bienvenido a Piedra, Papel, Tijera, Lagarto, Spock ===")
     print("Opciones:", opciones)
     jugador = input("Elige: ").lower()
 
@@ -76,3 +77,5 @@ while jugando:
         jugando = False
 
 print("Gracias por jugar!")
+
+
