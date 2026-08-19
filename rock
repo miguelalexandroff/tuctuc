@@ -76,6 +76,6 @@ while jugando:
     otra = input("¿Jugar de nuevo? (s/n): ").lower()
     if otra != "s":
         jugando = False
-print("Gracias por jugar")
+print("Puntaje final - Tú:", puntaje_jugador, "| CPU:", puntaje_cpu)
 
 
