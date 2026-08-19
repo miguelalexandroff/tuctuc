@@ -67,5 +67,5 @@ def jugar():
     elif resultado == "jugador":
         print("Ganaste!")
     else:
-        print("Perdiste :( uwu miau miau miau miau miau")
-jugar()
+        print("Perdiste :( uwu miau miau miau miau")
+print("=== Bienvenido a Piedra, Papel, Tijera, Lagarto, Spock ===")
