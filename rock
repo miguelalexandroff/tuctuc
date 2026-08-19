@@ -1,5 +1,6 @@
 opciones = ["piedra", "papel", "tijera", "lagarto", "spock"]
-
+puntaje_jugador = 0
+puntaje_cpu = 0
 le_gana_a = [
     ["tijera", "lagarto"],
     ["piedra", "spock"],
@@ -75,6 +76,6 @@ while jugando:
     otra = input("¿Jugar de nuevo? (s/n): ").lower()
     if otra != "s":
         jugando = False
-print("Gracias por jugar!")
+print("Gracias por jugar")
 
 
