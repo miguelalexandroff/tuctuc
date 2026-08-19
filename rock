@@ -25,7 +25,7 @@ def jugar():
         print("Opción inválida")
         return
 
-    print("Tú elegiste:", jugador)
+    print("elegiste:", jugador)
 
 jugar()
 import random
