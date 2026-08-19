@@ -75,7 +75,6 @@ while jugando:
     otra = input("¿Jugar de nuevo? (s/n): ").lower()
     if otra != "s":
         jugando = False
-
 print("Gracias por jugar!")
 
 
