@@ -27,3 +27,38 @@ def jugar():
     print("Tú elegiste:", jugador)
 
 jugar()
+import random
+
+opciones = ["piedra", "papel", "tijera", "lagarto", "spock"]
+
+le_gana_a = [
+    ["tijera", "lagarto"],
+    ["piedra", "spock"],
+    ["papel", "lagarto"],
+    ["spock", "papel"],
+    ["tijera", "piedra"],
+]
+
+def determinar_ganador(jugador, cpu):
+    if jugador == cpu:
+        return "empate"
+    indice_jugador = opciones.index(jugador)
+    if cpu in le_gana_a[indice_jugador]:
+        return "jugador"
+    else:
+        return "cpu"
+
+def jugar():
+    print("Opciones:", opciones)
+    jugador = input("Elige: ").lower()
+
+    if jugador not in opciones:
+        print("Opción inválida")
+        return
+
+    print("Tú elegiste:", jugador)
+
+    cpu = random.choice(opciones)
+    print("CPU eligió:", cpu)
+
+jugar()
