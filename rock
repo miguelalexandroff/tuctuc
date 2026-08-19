@@ -16,4 +16,14 @@ def determinar_ganador(jugador, cpu):
         return "jugador"
     else:
         return "cpu"
+def jugar():
+    print("Opciones:", opciones)
+    jugador = input("Elige: ").lower()
 
+    if jugador not in opciones:
+        print("Opción inválida")
+        return
+
+    print("Tú elegiste:", jugador)
+
+jugar()
