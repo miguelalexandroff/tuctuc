@@ -1,0 +1,19 @@
+opciones = ["piedra", "papel", "tijera", "lagarto", "spock"]
+
+le_gana_a = [
+    ["tijera", "lagarto"],
+    ["piedra", "spock"],
+    ["papel", "lagarto"], 
+    ["spock", "papel"],
+    ["tijera", "piedra"], 
+]
+
+def determinar_ganador(jugador, cpu):
+    if jugador == cpu:
+        return "empate"
+    indice_jugador = opciones.index(jugador)
+    if cpu in le_gana_a[indice_jugador]:
+        return "jugador"
+    else:
+        return "cpu"
+
